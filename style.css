@@ -1,4 +1,4 @@
- /* Reset e estilos base */
+/* Reset e estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ body {
     color: #FFFFFF;
 }
         
-/* Campo de pesquisa - MELHORIAS PRINCIPAIS */
+/* Campo de pesquisa */
 .search-container {
     max-width: 700px;
     margin: 0 auto;
@@ -220,53 +220,67 @@ body {
         
 /* Responsividade */
 @media (max-width: 768px) {
-.hero-title {
-    font-size: 2.5rem;
-}
+    .hero-title {
+        font-size: 2.5rem;
+    }
             
-.search-box {
-    flex-direction: column;
-    background: transparent;
-    border: none;
-    border-radius: 0;
-}
-            
-.search-box:focus-within {
-    border: none;
-    box-shadow: none;
-}
-            
-#search-input {
-    padding: 15px;
+    .search-box {
+        position: relative;
+        flex-direction: column;
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 18px;
+    color: #afafaf;
+    pointer-events: none; /* não atrapalha o clique no input */
+    }
+
+    #search-input {
+    width: 100%;
+    padding: 15px 15px 15px 65px; /* espaço pra ícone */
     background: #202024;
     border: 2px solid #323236;
     border-radius: 8px;
     margin-bottom: 10px;
-}
+    }
+
+
+    #search-button {
+        width: 100%;
+    }
             
-#search-button {
-    width: 100%;
-}
-            
-.post-actions {
-    flex-direction: column;
-}
-            
-.like-button, .share-button {
-    justify-content: center;
-}
+    .post-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .like-button, .share-button {
+        width: 100%;
+        justify-content: center;
+    }
 }
         
 @media (max-width: 480px) {
-.hero-title {
-    font-size: 2rem;
-}
+    .hero-title {
+        font-size: 2rem;
+    }
             
-.post {
-    padding: 20px;
-}
+    .post {
+        padding: 20px;
+    }
             
-.post-title {
-    font-size: 1.5rem;
-}
+    .post-title {
+        font-size: 1.3rem;
+    }
+
+    .main-content {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
 }
