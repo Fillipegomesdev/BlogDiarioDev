@@ -10,7 +10,7 @@ Tecnologias utilizadas
 
 HTML5
 
-CSS3 (com variáveis e efeitos de transição)
+CSS (com variáveis e efeitos de transição)
 ---
 
 Próximos passos
